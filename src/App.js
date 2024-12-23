@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Header from "./components/Header";
+import FeedbackItem from "./components/FeedbackItem";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <Header text="Feedback UI" bgColor="red" textColor="blue" />
+      <div className="container">
+        <FeedbackItem />
+      </div>
+    </>
+  );
 }
 
 export default App;
